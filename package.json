@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "ts-node --esm src/index.ts"
+  },
+  "dependencies": {
+    "@discordjs/rest": "^2.6.0",
+    "@napi-rs/canvas": "^0.1.80",
+    "colors": "^1.4.0",
+    "crypto": "^1.0.1",
+    "discord.js": "^14.23.2",
+    "dotenv": "^16.0.0",
+    "mongoose": "^8.19.1",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
+  }
+}
