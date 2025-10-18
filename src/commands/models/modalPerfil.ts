@@ -35,6 +35,7 @@ const genderInput = new TextInputBuilder()
   .setLabel("Gênero com o qual se identifica")
   .setStyle(TextInputStyle.Short)
   .setPlaceholder("Digite seu gênero")
+  .setMaxLength(30)
   .setRequired(true);
 
 const firstRow = new ActionRowBuilder<TextInputBuilder>().addComponents(aboutInput);
