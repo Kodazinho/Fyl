@@ -3,6 +3,7 @@ import "dotenv/config";
 import colors from "colors";
 
 import register from "./methods/register.ts";
+import registerEdit from "./methods/registerEditar.ts";
 import exists from "./methods/exists.ts";
 
 export class Database {
@@ -10,6 +11,7 @@ export class Database {
 
   public register : Function = register;
   public exists : Function = exists;
+  public registerEdit : Function = registerEdit;
 
   static async connect(): Promise<boolean> {
     if (!this._uri) {
