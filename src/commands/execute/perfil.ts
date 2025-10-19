@@ -35,7 +35,7 @@ export default async function (interaction: ChatInputCommandInteraction) {
     if (targetUser.id === interaction.user.id) {
         if (registred) {
             const avatarUrl = targetUser.displayAvatarURL({ extension: "png", size: 512 });
-            const bannerUrl: string = targetUser.bannerURL({ extension: "png", size: 512 }) || "https://via.placeholder.com/900x450/1a1a1a/FFFFFF?text=No+Banner";
+            const bannerUrl: string = targetUser.bannerURL({ extension: "png", size: 512 }) || "https://i.pinimg.com/736x/2d/e5/82/2de58268bd857a3c1933215b2c139209.jpg";
 
             try {
                 const buffer = await generateProfileBanner({
@@ -67,10 +67,6 @@ export default async function (interaction: ChatInputCommandInteraction) {
                 });
             }
         } else {
-            await interaction.editReply({
-                content: "Por favor, preencha seu perfil.",
-                ephemeral: true,
-            });
             await interaction.showModal(modal);
         }
     } else {
